@@ -1,0 +1,177 @@
+/* about_area1 */
+.about_area1 {
+    text-align:center;
+    margin-top:70px;
+}
+.about_me {}
+.about_nice {
+    margin-top:125px;
+    height:1015px;
+}
+.nice_txt {
+    background:url(../img/about_me/img2.png) no-repeat;
+    width:473px;
+    height:82px;
+    margin-bottom:50px;
+}
+.nice_img {
+    width: 1140px;
+    margin: 0 auto;
+}
+.nice_img li {
+    float:left;
+    margin-left:21px;
+}
+.nice_img li:first-child {
+    margin-left:0;
+}
+.nice_img li img {
+    margin-bottom:20px;
+    display:block; /* display block을 주는 이유는 이미지가 박스에 들어가 있을 때 여백이 생기기 떄문(여백없애려고)*/
+}
+.nice_img li div {
+    position:relative;
+}
+.nice_img li div:last-child img { /* img가 last-child 뒤에 있는 이유는 마지막 div안에 img의 margin값을 없애려고 */
+    margin-bottom:0;
+}
+.nice_img li:nth-child(1) div:nth-child(2):hover:after,
+.nice_img li:nth-child(2) div:nth-child(1):hover:after,
+.nice_img li:nth-child(3) div:nth-child(3):hover:after {
+    opacity: 1;
+}
+.nice_img li:nth-child(1) div:nth-child(2):after,
+.nice_img li:nth-child(2) div:nth-child(1):after,
+.nice_img li:nth-child(3) div:nth-child(3):after {
+    width:366px;
+    content:"";
+    display:block;
+    position:absolute;
+    opacity: 0;
+    top:0;
+    left:0;
+    transition:all 0.3s;
+}
+.nice_img li:nth-child(1) div:nth-child(2):after {
+    background:url(../img/about_me/img4-1.png) no-repeat;
+    height:276px;
+}
+.nice_img li:nth-child(2) div:nth-child(1):after {
+    background:url(../img/about_me/img6-1.png) no-repeat;
+    height:513px;
+}
+.nice_img li:nth-child(3) div:nth-child(3):after {
+    background:url(../img/about_me/img10-1.png) no-repeat;
+    height:269px;
+}
+/* icon */
+.nice_img li:nth-child(1) div:nth-child(3):after {
+    background:url(../img/about_me/icon1.png) no-repeat;
+    width:271px;
+    height:221px;
+    position:absolute;
+    bottom:97px;
+    left:-314px;
+    content:"";
+    display:block;
+}
+.nice_img li:nth-child(3) div:nth-child(1):after {
+    background:url(../img/about_me/icon2.png) no-repeat;
+    width:81px;
+    height:88px;
+    position:absolute;
+    top:165px;
+    right:-81px;
+    content:"";
+    display:block;
+}
+
+.about_area2 {
+    background:url(../img/about_me/img11.png) no-repeat;
+    width:100%;
+    height:1908px;
+    margin-top:122px;
+    position:relative;
+}
+.about_hobby {
+    width:1468px;
+    margin:0 auto;
+    padding-top:114px;
+}
+.hobby_img {}
+.hobby_img li {
+    float:left;
+    position:relative;
+}
+.hobby_img li:nth-child(1):hover:after,
+.hobby_img li:nth-child(2):hover:after,
+.hobby_img li:nth-child(3):hover:after,
+.hobby_img li:nth-child(4):hover:after {
+    opacity:1
+}
+.hobby_img li:nth-child(1):after,
+.hobby_img li:nth-child(2):after,
+.hobby_img li:nth-child(3):after,
+.hobby_img li:nth-child(4):after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:367px;
+    height:542px;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all 0.3s;
+}
+.hobby_img li:nth-child(1):hover:after {
+    background:url(../img/about_me/ins_5.png) no-repeat;
+}
+.hobby_img li:nth-child(2):hover:after {
+    background:url(../img/about_me/ins_6.png) no-repeat;
+}
+.hobby_img li:nth-child(3):hover:after {
+    background:url(../img/about_me/ins_7.png) no-repeat;
+}
+.hobby_img li:nth-child(4):hover:after {
+    background:url(../img/about_me/ins_8.png) no-repeat;
+}
+.about_want {
+    width:784px;
+    height:543px;
+    position:absolute;
+    bottom:210px;
+    right:12%;
+}
+.want_a {
+    float:left;
+}
+.want_a img {}
+.want_b {
+    float:right;
+}
+.want_b img {
+    float:left;
+}
+.want_b div:first-child img {
+    margin-bottom:20px;
+}
+.want_b div:nth-child(2) img {
+    margin-right:19px;
+}
+
+/* footer */
+/*
+#footerWrap {}
+#footer_about {}
+.footer_a {}
+.footer_l {
+    float:left;
+}
+.footer_l p {
+    float:left;
+    margin-right:50px;
+}
+.footer_r {
+    float:right;
+}
+.footer_r p {}*/

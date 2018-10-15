@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* rest */
+body,div,p,table,h1,h2,h3,h4,h5,h6,dd,dt,ul,ol,li,td,tr,th,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:16px; font-family: 'Noto Sans KR','돋움',dotum,sans-serif; color:#333;}
+ul,ol,li {list-style:none;}
+a {text-decoration:none; color:#333;}
+img,fieldset {border:none;}
+strong,em,address {font-weight:normal; font-style:normal;}
+tabel {border-collapse:collapse;}
+
+/* common */
+.hide {
+    display:none;
+}
+.screen_out {
+    text-indent:-9999px;
+    overflow:hidden;
+    width:0;
+    height:0;
+    display:block;
+}
+.box_width {
+    width:1200px;
+    margin:0 auto;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* layout */
+#wrap {}
+.about_bg {
+    background:url(../img/about_me/line.png) repeat-x;
+}
+#headerWrap {}
+#header {
+    height:130px;
+}
+#visual {
+    margin-top:269px;
+}
+#footerWrap {
+    clear:both;
+    text-align:center;
+    margin-top:100px;
+}
+#footer {}
+
+/* header */
+.logo {
+    float:left;
+    margin-top:40px;
+    margin-left:184px;
+}
+#naviWrap {}
+.gnb {
+    float:right;
+}
+.gnb li {
+    float:left;
+    margin-right:68px;
+    margin-top:71px;
+}
+.gnb li:last-child {
+    margin-right:114px;
+}
+.gnb li a {
+    font-size:16px;
+    color:rgba(51, 51, 51, 0.5);
+}
+.gnb li a:hover,
+.gnb li a.active{
+    color:#333;
+}
+
+/* footer */
+#main_footer {}
+#main_footer p {
+    font-size:16px;
+    color:rgba(51, 51, 51, 0.5);
+    
+}
+#sub_footer {
+    background-color:#f8f8f8;
+}

@@ -1,0 +1,43 @@
+/* visual */
+.vis_img_list {
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+.vis_img_list div {
+    position:relative;
+    z-index:100;
+}
+.vis_img_list:before {
+    background:url(../img/index/red_line.png) no-repeat;
+    width:1200px;
+    height:37px;
+    content:"";
+    display:block;
+    position:absolute;
+    top:104px;
+    left:0;
+    background-position: 1200px;
+    animation: red-line-from-right 0.6s 1.2s cubic-bezier(.215,.61,.355,1) 1 forwards;
+}
+@-webkit-keyframes red-line-from-right{
+    0.1%{background-position:1200px}
+    100%{background-position:0px}
+}
+@keyframes red-line-from-right{
+    0.1%{background-position:1200px}
+    100%{background-position:0px}
+}
+.vis_img1,.vis_img2,.vis_img3,
+.vis_img4,.vis_img5,.vis_img6 {
+    float:left;
+}
+
+.vis_img1 {
+    margin-left:30px;
+}
+.vis_img2 {}
+.vis_img3 {}
+.vis_img4 {}
+.vis_img5 {}
+.vis_img6 {}
