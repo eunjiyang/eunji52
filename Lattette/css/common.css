@@ -1,0 +1,330 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+/* rest */
+body,div,p,table,h1,h2,h3,h4,h5,h6,dd,dt,ul,ol,li,td,tr,th,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:12px; font-family: 'Nanum Square','돋움',dotum,sans-serif; color:#000;}
+ul,ol,li {list-style:none;}
+a, a:hover, a:active {text-decoration:none; color:#000;}
+img,fieldset {border:none;}
+strong,em,address {font-weight:normal; font-style:normal;}
+tabel {border-collapse:collapse;}
+
+/* common */
+.box_width {
+    width:1000px;
+    margin:0 auto;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.hide {
+    display:none;
+}
+.screen_out { /* 슬라이드 한개 외에 나머지를 숨겨라 */
+    text-indent:-9999px;
+    overflow:hidden;
+    width:0;
+    height:0;
+    display:block;
+}
+.p_h {
+    padding: 100px 0px;
+}
+
+/* layout */
+#wrap {}
+#headerWrap {}
+#header {}
+#visual {}
+#mainContents {}
+#footerWrap {}
+#footer {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* header */
+.logo {
+    padding-top:46px;
+    float:left;
+}
+#navWrap {
+    float:right;
+    margin-top:25px;
+    margin-bottom:22px;
+}
+.nav_top {
+    float:right;
+}
+.nav_right {
+    float:right;
+    margin-bottom:25px;
+}
+.t_menu {
+    float:left;
+}
+.t_menu li {
+    float:left;
+    padding-right:38px;
+    position:relative;
+}
+.t_menu li:first-child:after {
+    content:"";
+    display:block;
+    background:url(../img/t_menu_line.png) no-repeat;
+    width:1px;
+    height:12px;
+    position:absolute;
+    top:3px;
+    right:20px;
+    
+}
+.t_menu li:last-child {
+    padding-right:14px;
+}
+.t_menu li a {
+    font-size:14px;
+}
+.sch_area {
+    float:left;
+    width:130px;
+    height:22px;
+    border:1px solid #666;
+}
+.sch_area button {
+    background:url(../img/shc.png) no-repeat center;
+    width:14px;
+    height:14px;
+    border: none;
+    overflow: hidden;
+    text-indent: -9999px;
+    cursor: pointer;
+    float:right;
+    margin-top:3px;
+    margin-right:6px;
+}
+.sch_area input {
+    width:100px;
+    height:16px;
+    border:none;
+}
+.gnb_list {}
+.gnb {
+    float:right;
+}
+.gnb li {
+    float:left;
+    padding-left:95px;
+}
+.gnb li:first-child {
+    padding-left:0;
+}
+.gnb li a {
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* visual */
+.carousel-indicators {
+    bottom:25px;
+}
+.carousel-indicators li {
+    background:url(../img/indi_off.png) no-repeat;
+    width:14px;
+    height:14px;
+    margin-left:10px;
+}
+.carousel-indicators li:first-child {
+    margin-left:0;
+}
+.carousel-indicators li.active {
+    background:url(../img/indi_on.png) no-repeat;
+    width:34px;
+}
+/* best_menu */
+.best_area {
+    background-color:#fdfafa;
+}
+.best_menu {}
+.main_tit {
+    text-align: center;
+    padding-bottom: 82px;
+}
+.main_tit p {
+    font-size:20px;
+    color:#222;
+}
+.main_tit p:after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 2px;
+    background-color: #222;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+.best_list {
+    position: relative;
+}
+.best_list ul {}
+.best_list ul li {
+    float: left;
+    margin-left: 102px;
+}
+.best_list ul:before,
+.best_list ul:after {
+    content: "";
+    display: block;
+    background: url(../img/next.png) no-repeat center;
+    width: 30px;
+    height: 58px;
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+}
+.best_list ul:before {
+    left: -40px;
+}
+.best_list ul:after {
+    transform: rotate(180deg);
+    right: -20px;
+}
+.best_list ul li a {}
+.best_list ul li a img {}
+.best_list ul li a p {
+    font-size:15px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* review_area */
+.review_area {}
+.review_list {}
+.review_list ul {}
+.review_list ul li {
+    float: left;
+    padding-left:20px;
+}
+.review_list ul li:first-child,
+.review_list ul li:nth-child(4) {
+    padding-left:0px;
+}
+.review_list ul li:nth-child(4),
+.review_list ul li:nth-child(5),
+.review_list ul li:nth-child(6) {
+    margin-top: 10px;
+}
+.review_list ul li a {}
+.review_list ul li a img {}
+.review_list ul li a p {
+    font-size:15px;
+    line-height: 40px;
+}
+/* today_area */
+.today_area {
+    background-color: #fefcf7;
+}
+.today {}
+.today_list {}
+.today_list ul {}
+.today_list ul li {
+    float: left;  
+}
+.today_list ul li:last-child {
+    margin: 0px 10px;
+}
+.today_list ul li a {}
+.today_list ul li a img {}
+.today_box {}
+.today_box .today_txt {
+    padding-top: 92px;
+    padding-bottom: 65px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.today_txt p {
+    font-size: 15px;
+}
+.today_txt .today_tit {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+.banner {
+    margin-top: 40px;
+}
+.f_area {
+    
+}
+.f_link_bg {
+    background-color: #ededed;
+}
+.f_link {
+    padding: 18px 0px;
+    display: inline-block;
+}
+.f_link .f_logo {
+    float: left;
+    margin-right: 70px;
+    padding-top: 5px;
+}
+.f_link .f_sns {
+    display: inline-block;
+}
+.f_link .f_sns ul {
+    padding-top: 10px;
+}
+.f_link .f_sns ul li {
+    float: left;
+    margin-left: 12px;
+}.f_link .f_sns ul li:first-child {
+    margin-left: 0px;
+}
+.f_link .f_sns ul li a {}
+.f_link .f_sns ul li a img {}
+
+.f_menu {
+    padding-top: 50px;
+}
+.f_menu ul {
+    display: inline-block;
+}
+.f_menu ul li {
+    float: left;
+    padding-left: 36px;
+    position: relative;
+}
+.f_menu ul li:after {
+    content: "";
+    display: block;
+    background: url(../img/f_line.png) no-repeat;
+    width: 1px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    right: -18px;
+}
+.f_menu ul li:last-child:after {
+    background: none;
+}
+.f_menu ul li a {
+    font-size: 14px;
+}
+.f_menu h2 {
+    font-size: 17px;
+    padding: 25px 0;
+}
+.addr {}
+.addr p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.addr p span {
+    padding-left: 16px;
+}
+.addr p span:first-child {
+    padding-left: 0;
+}

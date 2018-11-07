@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+
+
+/* rest */
+body,div,p,table,h1,h2,h3,h4,h5,h6,dd,dt,ul,ol,li,td,tr,th,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:12px; font-family: 'Nanum Square','돋움',dotum,sans-serif; color:#333;}
+ul,ol,li {list-style:none;}
+a {text-decoration:none; color:#333;}
+img,fieldset {border:none;}
+strong,em,address {font-weight:normal; font-style:normal;}
+tabel {border-collapse:collapse;}
+
+/* common */
+.hide {
+    display:none;
+}
+.screen_out { /* 슬라이드 한개 외에 나머지를 숨겨라 */
+    text-indent:-9999px;
+    overflow:hidden;
+    width:0;
+    height:0;
+    display:block;
+}
+.box_width {
+    width:1160px;
+    margin:0 auto;
+}
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.only_web {}
+.only_m {
+    display:none;
+}
+.only_m3 {
+    display:none;
+}
+
+/* layout */
+#wrap {
+    min-width:1160px;
+    overflow:hidden;
+}
+.about_bg {
+    background-color:#333;
+}
+#headerWrap {}
+#header {
+    height:130px;
+}
+#visual {}
+#mainContents {}
+#footerWrap {}
+#footer {
+    background-color:#444;
+    width:100%;
+    text-align:center;
+}
+
+/* header */
+.logo {
+    float:left;
+    margin-top:58px;
+}
+#navWrap {
+    float:right;
+    margin-right:7px;
+}
+.nav_top {
+    float:right;
+    margin-top:20px;
+}
+.nav_top .t_menu {
+    float:left;
+    margin-top:12px;
+    
+}
+.nav_top .t_menu li {
+    float:left;
+    margin-left:39px;
+    position:relative;
+}
+.nav_top .t_menu li:after {
+    content:"";
+    background:url(../img/line.png) repeat-y;
+    width:1px;
+    height:14px;
+    display:block;
+    position:absolute;
+    right:-20px;
+    top:0;
+}
+.nav_top .t_menu li:last-child:after {
+    background:none;
+}
+.nav_top .t_menu li a {
+    font-size:14px;
+    font-weight:500;
+    color:#666;
+}
+
+.nav_top .sch_area {
+    width:128px;
+    height:28px;
+    border:1px solid #ddd;
+    float:left;
+    margin-left:26px;
+    margin-right:2px;
+    margin-bottom:33px;
+}
+.nav_top .sch_area input {
+    width:104px;
+    height:22px;
+    border:none;
+}
+.nav_top .sch_area button {
+    width:16px;
+    height:16px;
+    border:none;
+    background:url(../img/search.png) no-repeat center;
+    text-indent:-9999px;
+    overflow:hidden;
+    margin-top:6px;
+    margin-left:-4px;
+    cursor:pointer;
+}
+
+.gnb_list {
+    clear:both;
+    float:right;
+}
+.gnb {
+    float:left;
+    margin-top:-1px;
+}
+.gnb li {
+    float:left;
+    line-height:30px;
+    margin-left:68px;
+}
+.gnb li a {
+    font-size:17px;
+    font-weight:700;
+    color:#333;
+    display:block;
+}
+.gnb li a:hover {
+    color:#fcb614;
+}
+
+.sns {
+    float:right;
+    margin-left:83px;
+}
+.sns li {
+    float:left;
+}
+.sns li a {
+    background:url(../img/sns_link.png) no-repeat;
+    text-indent:-9999px;
+    overflow:hidden;
+    width:30px;
+    height:30px;
+    display:block;
+}
+.sns .facebook a {
+    background-position:-10px -10px;
+    margin-right:16px;
+}
+.sns .insta a {
+    background-position:-60px -10px;
+    margin-right:28px;
+}
+
+/* footer */
+.f_logo {
+    padding-top:40px;
+    padding-bottom:45px;
+}
+.f_menu {}
+.f_menu li {
+    margin-right:28px;
+    display:inline-block;
+}
+.f_menu li a {
+    font-size:14px;
+    font-weight:500;
+    color:#fff;
+}
+.f_menu li:last-child {
+    margin:0;
+}
+.f_name {
+    font-size:17px;
+    font-weight:450;
+    color:#fff;
+    margin-top:38px;
+    margin-bottom:33px;
+}
+
+.addr {}
+.addr p {
+    margin-bottom:20px;
+}
+.addr p span {
+    margin-right:11px;
+    font-size:14px;
+    color:#fff;
+}
+.addr p span:last-child {
+    margin:0;
+}
+.copy {
+    font-size:13px;
+    color:#fff;
+    padding-bottom:65px;
+}
