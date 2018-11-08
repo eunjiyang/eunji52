@@ -11,10 +11,10 @@ $(function(){
         $('.img_wrap1').stop().animate({left:-680*n})
         
         $('.p_list li').removeClass('on')
-        $('.p_list li:eq('+n+')').addclass('on')
+        $('.p_list li:eq('+n+')').addClass('on')
         
         if(n==5){
-            $('.p_list li:eq(0)').addclass('on')
+            $('.p_list li:eq(0)').addClass('on')
         }
         return false;
     }
