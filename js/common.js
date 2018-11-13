@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     var n=0
     var rol = setInterval(rollng,3000)
     
@@ -18,4 +18,15 @@ $(function(){
         }
         return false;
     }
-})
+    window.parent.postMessage('music_check', '*');
+    $("#music").click(function(e){
+        window.parent.postMessage('music', '*');
+    });
+    window.addEventListener('message', function(e) {
+        if(e.data == 'on') {
+            $('#music').addClass('active');
+        } else {
+            $('#music').removeClass('active');
+        }
+    });
+});

@@ -7,9 +7,58 @@
     position:relative;
     height:540px;
 }
-.vis {
+.vis1 {
     background:url(../img/sub1/visual.png) no-repeat center top;
+    width: 100%;
     height:540px;
+    display: table;
+}
+.vis2 {
+    background:url(../img/sub2/visual.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis3 {
+    background:url(../img/sub3/visual.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis4 {
+    background:url(../img/sub4/visual.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis5 {
+    background:url(../img/sub5/visual.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis6 {
+    background:url(../img/sub6-7/visual1.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis7 {
+    background:url(../img/sub6-7/visual3.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis8 {
+    background:url(../img/sub8/visual.png) no-repeat center top;
+    width: 100%;
+    height:540px;
+    display: table;
+}
+.vis_img {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 .roll {
     position:absolute;

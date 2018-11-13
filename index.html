@@ -9,40 +9,41 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div id="wrap">
-        <div id="headerWrap">
-            <header id="header">
-                <h1 class="logo"><a href="#"><img src="img/index/logo.png" alt="은지 홈페이지"></a></h1>
-                
-                <div id="naviWrap">
-                    <ul class="gnb">
-                        <li><a class="active" href="#">HOME</a></li>
-                        <li><a href="sub1-canon.html">PROJECTS</a></li>
-                        <li><a href="about_me.html">ABOUT ME</a></li>
-                        <li><a href="#">♥</a></li>
-                    </ul>
-                </div><!-- // naviWrap -->
-            </header><!-- // header -->
-        </div><!-- // headerWrap -->
-        
-        <div id="visual">
-            <div class="vis_img_list">
-                <div class="vis_img1"><img src="img/index/D.png" alt="#"></div>
-                <div class="vis_img2"><img src="img/index/E.png" alt="#"></div>
-                <div class="vis_img3"><img src="img/index/S.png" alt="#"></div>
-                <div class="vis_img4"><img src="img/index/I.png" alt="#"></div>
-                <div class="vis_img5"><img src="img/index/G.png" alt="#"></div>
-                <div class="vis_img6"><img src="img/index/N.png" alt="#"></div>
-            </div>
-        </div><!-- // visual -->
-
-        <div id="footerWrap">
-            <footer id="main_footer">
-                <p>- 본 사이트는 크롬브라우저에 최적화 되어 있습니다. -</p>
-            </footer> <!-- // main_footer -->
-        </div><!-- // footerWrap -->
-    </div><!-- // wrap -->
+    <audio id="player" autoplay="1" loop="-1" controls="" volume="-200" style="display: none">
+        <source src="./peppertones.mp3" type="audio/mp3">
+    </audio>
+    <iframe id="iframe" name="iframe_main" src="./home.html" style="height:940px; width: 1920px" frameborder="no" scrolling="yes"></iframe>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        /*
+        $(document).ready(function(){
+            console.log('play');
+            var audio = $('#player')[0];
+            audio.play();
+            $('#iframe')[0].contentWindow.postMessage('on', '*');
+        });
+        */
+        window.addEventListener('message', function(e) {
+            var audio = $('#player')[0];
+            switch(e.data) {
+                case 'music_check' : 
+                    if(audio.paused) {
+                        $('#iframe')[0].contentWindow.postMessage('off', '*');
+                    } else {
+                        $('#iframe')[0].contentWindow.postMessage('on', '*');
+                    }
+                    break;
+                case 'music' :
+                    if(audio.paused) {
+                        $('#iframe')[0].contentWindow.postMessage('on', '*');
+                       audio.play();
+                    } else {
+                        $('#iframe')[0].contentWindow.postMessage('off', '*');
+                       audio.pause();
+                    }
+                    break;
+            }
+        });
+    </script>
 </body>
-<script src="js/jquery-1.12.4.js"></script>
-<script src="js/common.js"></script>
 </html>
